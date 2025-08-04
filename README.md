@@ -74,7 +74,6 @@ AngulareCommerceDs_17/
 │   │   │   ├───register.component.css  
 │   │   │   ├───register.component.html  
 │   │   │   └───register.component.ts  
-│   │   └───shared.module.ts  
 │   ├───app.component.html  
 │   ├───app.component.ts  
 │   ├───app.module.ts  
