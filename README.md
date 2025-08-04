@@ -53,7 +53,6 @@ AngulareCommerceDs_17/
 │   │   ├───ecommerce.component.html  
 │   │   ├───ecommerce.component.ts  
 │   │   ├───ecommerce.interface.ts  
-│   │   ├───ecommerce.module.ts  
 │   │   └───ecommerce-routing.module.ts  
 │   ├───guards/  
 │   │   └───auth-guard.service.ts  
