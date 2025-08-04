@@ -75,8 +75,9 @@ AngulareCommerceDs_17/
 │   │   │   ├───register.component.html  
 │   │   │   └───register.component.ts  
 │   ├───app.component.html  
-│   ├───app.component.ts  
-│   ├───app.module.ts  
+│   ├───app.component.ts    
+│   ├───app.config.ts   
+│   ├───app.module.ts    
 │   └───app-routing.module.ts  
 ├───environments/  
 │   ├───environment.development.ts  
