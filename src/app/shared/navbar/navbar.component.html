@@ -19,42 +19,55 @@
         style="--bs-scroll-height: 100px"
       >
         <li class="nav-item">
+          @if (!isGenresPage()) {
           <a class="nav-link" routerLink="/genres">MUSIC GENRES</a>
+          }
         </li>
         <li class="nav-item">
+          @if (!isGroupsPage()) {
           <a class="nav-link" routerLink="/groups">GROUPS</a>
+          }
         </li>
         <li class="nav-item">
+          @if (!isRecordsPage()) {
           <a class="nav-link" routerLink="/records">RECORDS</a>
+          }
         </li>
         @if (!isListGroupsPage()) {
           <li class="nav-item">
             <a class="nav-link" routerLink="/listgroups">MUSIC GROUPS</a>
           </li>
         }
+        @if (!isCartsPage()) {
         <li class="nav-item">
           <a class="nav-link" routerLink="/carts">CARTS</a>
         </li>
+        }
+        @if (!isOrdersPage()) {
         <li class="nav-item">
           <a class="nav-link" routerLink="/admin-orders">ORDERS</a>
         </li>
+        }
+        @if (!isUsersPage()) {
         <li class="nav-item">
           <a class="nav-link" routerLink="/users">USERS</a>
         </li>
+        }
       </ul>
       }
 
-      <!-- Regular user navigation links -->
+      <!-- Regular user navigation links - Only show for non-admin users -->
       @if (emailUser && !isAdmin()) {
         <ul
           class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
           style="--bs-scroll-height: 100px"
         >
-          <!-- Only show the MUSIC GROUPS link when not already on that page -->
           @if (!isListGroupsPage()) {
             <li class="nav-item">
               <a class="nav-link" routerLink="/listgroups">MUSIC GROUPS</a>
             </li>
+          }
+          @if (!isOrdersPage()) {
             <li class="nav-item">
               <a class="nav-link" routerLink="/orders">ORDERS</a>
             </li>
